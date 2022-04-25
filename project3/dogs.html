@@ -11,12 +11,12 @@
                 request.onload = function(){
                     var data = JSON.parse(this.response);
                     var dogImage =data.message;
-                    document.getElementById(dogImage).textContent=dogImage;
+                    document.getElementById(dog).imageContent=dogImage;
                 }
             }
         </script>
     </head>
-    <body onload = "getDog()">
+    <body>
         <div>
             <div>
                 <h1>
@@ -31,14 +31,46 @@
                         <li><a href = "Foxes.html">Fox</a></li>
                 </nav>
             </div>
-            <ul>
-                <li id = "dogImage">
-            
+            <h1>What Kind of Dog Are You?</h1>
+            <h2>Fill out this short survey to see the picture of a dog describes you</h2>
+            <ol>
+                <li>
+                    <p>Quesion 1</p>
+                    <input type = "radio" name="ans1" value ="val1">val1
+                    <input type = "radio" name="ans1" value ="val2">val2
+                    <input type = "radio" name="ans1" value ="val3">val3
                 </li>
                 <li>
-                    <button onclick = "getDog()">See another dog</button>
+                    <p>Quesion 2</p>
+                    <input type = "radio" name="ans2" value ="val4">val4
+                    <input type = "radio" name="ans2" value ="val5">val5
+                    <input type = "radio" name="ans2" value ="val6">val6
                 </li>
-            </ul>
+                <li>
+                    <p>Quesion 3</p>
+                    <input type = "radio" name="ans3" value ="val7">val7
+                    <input type = "radio" name="ans3" value ="val8">val8
+                    <input type = "radio" name="ans3" value ="val9">val9
+                </li>
+                <li>
+                    <p>Quesion 4</p>
+                    <input type = "radio" name="ans4" value ="val10">val10
+                    <input type = "radio" name="ans4" value ="val11">val11
+                    <input type = "radio" name="ans4" value ="val12">val12
+                </li>
+                <li>
+                    <p>Quesion 5</p>
+                    <input type = "radio" name="ans5" value ="val13">val13
+                    <input type = "radio" name="ans5" value ="val14">val14
+                    <input type = "radio" name="ans5" value ="val15">val15
+                </li>              
+            </ol>
+            
         </div>
+        <p>
+            
+            <button onclick="dogResults.html">Get Results</button>
+            
+        </p>
     </body>
 </html>

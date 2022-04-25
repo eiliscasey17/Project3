@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            project 3
+        </title>
+        <script>
+            var getDog = function(){
+                var request =  new XMLHttpRequest();
+                request.open("GET", "https://dog.ceo/api/breeds/image/random");
+                request.onload = function(){
+                    var data = JSON.parse(this.response);
+                    var dogImage =data.message;
+                    document.getElementById(dog).imageContent=dogImage;
+                }
+            }
+        </script>
+    </head>
+    <body onload="getDog()">
+        <div>
+            <div>
+                <h1>
+                    What Animal are you Today?
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "cats.html">Cat</a></li>
+                        <li><a href = "ducks.html">Duck</a></li>
+                        <li><a href = "dogs.html">Dog</a></li>
+                        <li><a href = "Foxes.html">Fox</a></li>
+                </nav>
+            </div>
+            <p>Here is your dog!</p>
+            <img src="dogImage">
+        </div>
+    </body>
+</html>
+
