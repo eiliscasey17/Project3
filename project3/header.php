@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            hello world
+            Animal Quizzes
         </title>
     </head>
     <body>
@@ -20,10 +20,6 @@
                         <li><a href = "Foxes.html">Fox</a></li>
                 </nav>
             </div>
-            <p>
-                This website has multiple quizes
-                 for you to take that will tell you which animal photo you are today
-            </p>
         </div>
     </body>
 </html>
