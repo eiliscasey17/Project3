@@ -4,17 +4,6 @@
         <title>
             hello world
         </title>
-        <script>
-            var getDog = function(){
-                var request =  new XMLHttpRequest();
-                request.open("GET", "https://dog.ceo/api/breeds/image/random");
-                request.onload = function(){
-                    var data = JSON.parse(this.response);
-                    var dogImage =data.message;
-                    document.getElementById(dog).imageContent=dogImage;
-                }
-            }
-        </script>
     </head>
     <body>
         <div>
@@ -69,8 +58,8 @@
         </div>
         <p>
             
-            <button onclick="dogResults.html">Get Results</button>
-            
+            <a href="dogResults.html"
+
         </p>
     </body>
 </html>

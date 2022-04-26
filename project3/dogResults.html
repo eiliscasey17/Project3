@@ -11,8 +11,10 @@
                 request.onload = function(){
                     var data = JSON.parse(this.response);
                     var dogImage =data.message;
-                    document.getElementById(dog).imageContent=dogImage;
+                    console.log(dogImage);
+                    document.getElementById("dog").src=dogImage;
                 }
+                request.send();
             }
         </script>
     </head>
@@ -32,7 +34,7 @@
                 </nav>
             </div>
             <p>Here is your dog!</p>
-            <img src="dogImage">
+            <img id="dog" src="">
         </div>
     </body>
 </html>
