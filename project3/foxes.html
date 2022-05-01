@@ -1,32 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CSC2053:Project 3</title>
+        <title>
+            project 3
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
-    <body>
-        <h1>What Kind of Fox Are You?</h1>
-        <h2>Fill out this short survey to see the picture of the fox you are most closely related to!</h2>
-        <p>What is your favorite trait of a fox?</p>
-        <input type="radio" name="trait" value="Orange Fur">Orange Fur
-        <input type="radio" name="trait" value="Bushy Tail">Bushy Tail
-        <input type="radio" name="trait" value="Slyness">Slyness
-        <P>What do you drink to cure a hangover?</P>
-        <input type="radio" name="drink" value="Fur-appoccino">Fur-appoccino
-        <input type="radio" name="drink" value="Hair of the Fox">Hair of the Fox
-        <input type="radio" name="drink" value="Foxtail">A Foxtail
-        <p>What is your favorite movie?</p>
-        <input type="radio" name="movie" value="Fantastic Mr.Fox">Fantastic Mr.Fox
-        <input type="radio" name="movie" value="The Fox and The Hound">The Fox and The Hound
-        <input type="radio" name="movie" value="Zootopia">Zootopia
-        <p>What is your favorite internet browser?</p>
-        <input type="radio" name="browser" value="Chrome">Chrome
-        <input type="radio" name="browser" value="Safari">Safari
-        <input type="radio" name="browser" value="Firefox">Firefox
-        <p>Where do you get your News?</p>
-        <input type="radio" name="news" value="CNN">CNN
-        <input type="radio" name="news" value="Twitter">Twitter
-        <input type="radio" name="news" value="Fox News">Fox News
-        <p><button onclick="foxResults.html">Get Results</button></p>
+    <body style="background-color: azure;">
+        <div>
+            <div >
+                <h1  style="margin-left: 2%; margin-top: 2%;">
+                    What Animal are you Today?
+                </h1>
+                <nav class="nav navbar-light">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a class="nav-link" href = "index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href = "cats.html">Cat</a></li>
+                        <li class="nav-item"><a class="nav-link" href = "ducks.html">Duck</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href = "dogs.html">Dog</a></li>
+                        <li class="nav-item"><a class="nav-link" href = "Foxes.html">Fox</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div style="background-color: white;  border-top: 1px solid gainsboro; border-bottom: 1px solid gainsboro;">
+                <h4 style="margin: 1%;">What Kind of Fox Are You?</h4>
+                <h7 style="margin: 1%;">Fill out this short survey to see the picture of a fox describes you</h7>
+                <ol style="margin: 1%;">
+                    <li>
+                        <p>What is your favorite trait of a fox? 1</p>
+                        
+                            <input type = "radio"  class="btn-check" name="ans1" id="val1" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val1">Orange Fur</label>
+                            <input type = "radio"  class="btn-check" name="ans1" id="val2" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val2">Bushy Tail</label>
+                            <input type = "radio"  class="btn-check" name="ans1" id="val3" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val3">Slyness</label>
+                        
+                        
+                    </li>
+                    <li>
+                        <p>What do you drink to cure a hangover?</p>
+                        
+                            <input type = "radio"  class="btn-check" name="ans2" id="val4" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val4">Fur-appoccino</label>
+                            <input type = "radio"  class="btn-check" name="ans2" id="val5" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val5">Hair of the Fox</label>
+                            <input type = "radio"  class="btn-check" name="ans2" id="val6" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val6">A Foxtail</label>
+                        
+                    </li>
+                    <li>
+                        <p>What is your favorite movie?</p>
+                        
+                            <input type = "radio"  class="btn-check" name="ans3" id="val7" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val7">Fantastic Mr.Fox</label>
+                            <input type = "radio"  class="btn-check" name="ans3" id="val8" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val8">The Fox and The Hound</label>
+                            <input type = "radio"  class="btn-check" name="ans3" id="val9" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val9">Zootopia</label>
+                        
+                    </li>
+                    <li>
+                        <p>What is your favorite internet browser?</p>
+                        
+                            <input type = "radio"  class="btn-check" name="ans4" id="val10" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val10">Chrome</label>
+                            <input type = "radio"  class="btn-check" name="ans4" id="val11" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val11">Safari</label>
+                            <input type = "radio"  class="btn-check" name="ans4" id="val12" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val12">Firefox</label>
+                        
+                    </li>
+                    <li>
+                        <p>Where do you get your News?</p>
+                        
+                            <input type = "radio"  class="btn-check" name="ans5" id="val13" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val13">CNN</label>
+                            <input type = "radio"  class="btn-check" name="ans5" id="val14" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val14">Twitter</label>
+                            <input type = "radio"  class="btn-check" name="ans5" id="val15" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="val15">Fox News</label>
+                        
+                    </li>              
+                </ol>
+                <div style="margin: 2%;">         
+                    <a class="btn btn-primary" href="foxResults.html">See your results</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
-

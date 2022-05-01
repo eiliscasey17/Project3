@@ -20,7 +20,21 @@ var getCat = function(){
     }
     request.send();
 }
+
+var getFox = function(){
+    var request =  new XMLHttpRequest();
+    request.open("GET", "https://randomfox.ca/floof/");
+    request.onload = function(){
+        var data = JSON.parse(this.response);
+        var foxImage = data.image;
+        console.log(foxImage);
+        document.getElementById("fox").src=foxImage;
+    }
+    request.send();
+}
+
 var getImages =function(){
     getCat();
     getDog();
+    getFox();
 }
